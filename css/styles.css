@@ -1,0 +1,169 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body{
+  cursor: default;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 572px;
+  padding-top: 25px;
+  border-radius: 20px;
+  background-color: hsl(216, 50%, 16%);
+
+}
+
+
+
+/* image section */
+.nft-image{
+  margin: auto;
+  display: block;
+  width: 300px;
+  border-radius: 8px;
+}
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 24px;
+  right: 25px;
+  width: 300px;
+  opacity: 0;
+  transition: .4s ease;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: hsla(178, 100%, 50%, 0.3);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* making it responsive for small devices */
+@media (max-width: 375px) {
+.card{
+padding-top: 22px;
+width: 330px;
+}
+.nft-image{
+  margin: auto;
+  display: block;
+  width: 290px;
+  border-radius: 8px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 19px;
+  right: 25px;
+  width: 290px;
+}
+}
+
+
+
+
+/****** card body *******/
+.card-body{
+  padding-left: 25px;
+}
+
+h3{
+  color: white;
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-family: 'Outfit', sans-serif;
+}
+
+h3:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+p{
+  font-size: 16px;
+  color: hsl(215, 51%, 70%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h6{
+  display: inline;
+  font-family: 'outfit', sans-serif;
+}
+
+
+.price{
+  color: hsl(178, 100%, 50%);
+}
+
+.time-left{
+  position: absolute;
+  right: 25px;
+  margin-top: 2px;
+  color:  hsl(215, 51%, 70%)
+}
+
+i{
+  margin-right: 5px;
+}
+
+
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-width: 1.5px;
+  color: hsl(215, 32%, 27%);
+}
+
+
+
+/* creator section */
+.creation-credits img{
+  float: left;
+  width: 32px;
+  margin-right: 10px;
+}
+
+.creation-credits p{
+   padding-top: 4px;
+}
+span{
+  cursor: pointer;
+  color: white;
+}
+
+span:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 375px) {
+.creation-credits {
+margin-top: 20px;
+}
